@@ -2,16 +2,15 @@
     /* border: 5px solid red; */
     display: flex;
     justify-content: space-between;
-    max-width: 1000px;
-    width: 100%;
+    width: 90%;
     padding: 5px;
     margin: 20px;
+    align-self: center;
 }
 
 .navbar__brand {
     font-size: 35px;
     font-weight: 700;
-    color: #eee;
 }
 
 .navbar__linksBox {
