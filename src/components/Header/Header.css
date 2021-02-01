@@ -1,11 +1,11 @@
 .header {
     display: flex;
     flex-direction: column;
-    /* background: 
-    linear-gradient(to bottom, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.85)), 
-    url('../../images/header-bg.jpg') 
-    top left / cover
-    no-repeat; */
+    background: 
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.85)), 
+    url('../../images/header-bg.png') 
+    bottom left / cover
+    no-repeat;
     height: 100vh;
     /* border: 5px solid red; */
 }
