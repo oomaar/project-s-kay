@@ -18,7 +18,7 @@ export default function App() {
         const fetchPost = async () => {
             setLoading(true);
             const res = await axios.get('https://jsonplaceholder.typicode.com/photos');
-            setPosts(res.data.slice(0, 100));
+            setPosts(res.data);
             setLoading(false);
         }
 
@@ -54,22 +54,30 @@ export default function App() {
                 prevPage={prevPage}
                 nextPage={nextPage}
             />
+
+
+            <div class="container-fluid padding">
+                <div class="row text-center padding">
+
+                    <div class="col-xs-12 col-sm-6 col-md-4">
+                        <i class="fas fa-code"></i>
+                        <h3>HTML5</h3>
+                        <p>ai 7aga ai 7aga ai 7aga ai 7aga ai 7aga</p>
+                    </div>
+
+                    <div class="col-xs-12 col-sm-6 col-md-4">
+                        <i class="fas fa-bold"></i>
+                        <h3>BOOTSTRAP</h3>
+                        <p>ai 7aga ai 7aga ai 7aga ai 7aga ai 7aga</p>
+                    </div>
+
+                    <div class="col-sm-12 col-md-4">
+                        <h3>CSS3</h3>
+                        <p>ai 7aga ai 7aga ai 7aga ai 7aga ai 7aga</p>
+                    </div>
+
+                </div>
+            </div>
         </div>
     )
 }
-
-{/*import { Pagination } from 'react-instantsearch-dom';
-     <Pagination
-
-defaultRefinement={currentPage}
-showFirst={false}
-showPrevious={false}
-showNext={false}
-showLast={false}
-totalPages={10}
-/> */}
-
-
-
-
-{/*  import Pagination from '@atlaskit/pagination'; <Pagination pages={[1, 2, 3, 4, 5, 6, 7, 8, 9, indexOfLastPage]} /> */ }

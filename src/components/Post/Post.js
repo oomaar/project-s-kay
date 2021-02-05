@@ -6,46 +6,21 @@ const Post = ({ posts, loading }) => {
         return <h2>7ot hena spinner</h2>
     }
     return (
-        <div className="container">
-            <ul className="postul">
-                {posts.map(post => (
-                    (post.id % 3 === 0) && (
+        <div class="col-xs-12 col-sm-6 col-md-4">
+            <div className="container">
+                <ul className="postul">
+                    {posts.map(post => (
                         <li key={post.id} className="postli">
                             <img
                                 src={post.url}
                                 alt={post.title}
-                                style={{ width: "12rem" }}
+
                             />
                             <h4>{post.title}</h4>
                         </li>
-                    )))}
-            </ul>
-            <ul className="postul">
-                {posts.map(post => (
-                    (post.id % 3 === 0) && (
-                        <li key={post.id} className="postli">
-                            <img
-                                src={post.url}
-                                alt={post.title}
-                                style={{ width: "12rem" }}
-                            />
-                            <h4>{post.title}</h4>
-                        </li>
-                    )))}
-            </ul>
-            <ul className="postul">
-                {posts.map(post => (
-                    (post.id % 3 === 0) && (
-                        <li key={post.id} className="postli">
-                            <img
-                                src={post.url}
-                                alt={post.title}
-                                style={{ width: "12rem" }}
-                            />
-                            <h4>{post.title}</h4>
-                        </li>
-                    )))}
-            </ul>
+                    ))}
+                </ul>
+            </div>
         </div>
     )
 }
