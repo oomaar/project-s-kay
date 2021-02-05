@@ -1,0 +1,17 @@
+.postul {
+    display: flex;
+    list-style-type: none;
+}
+
+.postli {
+    margin: 30px;
+}
+
+img {
+    cursor: pointer;
+}
+
+h4 {
+    font-size: 20px;
+    width: 10px;
+}

@@ -1,0 +1,20 @@
+.cont {
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    list-style-type: none;
+}
+
+.as {
+    padding: 10px;
+    border: 1px solid black;
+    background-color: white;
+}
+
+.asas {
+    text-decoration: none;
+}
+
+.asas:current {
+    background-color: green;
+}
