@@ -1,6 +1,7 @@
 import React from 'react';
 import { selectShows, setShow } from "./showsSlice";
 import { useSelector, useDispatch } from "react-redux";
+import "./Shows.css";
 
 const Shows = () => {
     const dispatch = useDispatch();
@@ -13,10 +14,10 @@ const Shows = () => {
     }
 
     return (
-        <div className="box">
-            <button className="toggle" onClick={showDiv}>Click</button>
+        <div className="boxs">
+            <button className="toggles" onClick={showDiv}>Click</button>
 
-            <div className={`pop ${showing.shows && 'show'}`}>
+            <div className={`pops ${showing.shows && 'shows'}`}>
                 <h3 className="text">Testing Text</h3>
                 <h3 className="text">Testing Text</h3>
                 <h3 className="text">Testing Text</h3>
