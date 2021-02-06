@@ -1,13 +1,14 @@
 import React from 'react';
 import './App.css';
-import { Login, Shows } from './components';
+import { Login, Shows, Slider } from './components';
 
 export default function App() {
     return (
         <div className="app">
-            {/* <TestRedux /> */}
+            {/* <TestRedux /> 
             <Login />
-            <Shows />
+            <Shows /> */}
+            <Slider />
         </div>
     )
 }
